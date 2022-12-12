@@ -6,6 +6,6 @@ public class AppTest {
 
     @Test
     public void test_app() {
-        System.out.println("hello log masking");
+        System.out.println("hello log masking. fea_001");
     }
 }
