@@ -12,7 +12,8 @@
     <packaging>pom</packaging>
 
     <properties>
-        <version.slf4j>2.0.3</version.slf4j>
+        <version.slf4j>2.0.4</version.slf4j>
+        <version.logback>1.4.5</version.logback>
         <version.junit>5.9.1</version.junit>
         <version.mockito>4.8.1</version.mockito>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -23,6 +24,11 @@
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
                 <version>${version.slf4j}</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>${version.logback}</version>
             </dependency>
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
