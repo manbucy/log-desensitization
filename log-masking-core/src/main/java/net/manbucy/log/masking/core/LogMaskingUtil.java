@@ -1,4 +1,4 @@
-package net.manbucy.log.masking;
+package net.manbucy.log.masking.core;
 
 import java.util.ArrayList;
 import java.util.List;

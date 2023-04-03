@@ -6,8 +6,11 @@
     <groupId>net.manbucy.log</groupId>
     <artifactId>log-masking-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+
     <modules>
-        <module>log-masking</module>
+        <module>log-masking-core</module>
+        <module>log-masking-test</module>
+        <module>log-masking-for-logback</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -18,6 +21,7 @@
         <version.mockito>4.8.1</version.mockito>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
     <dependencyManagement>
         <dependencies>
             <dependency>

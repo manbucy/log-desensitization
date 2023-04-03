@@ -1,4 +1,4 @@
-package net.manbucy.log.masking;
+package net.manbucy.log.masking.core;
 
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
