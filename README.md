@@ -1,2 +1,2 @@
-# log-masking
-Masking sensitive data in output logs
+# log-desensitization
+desensitization sensitive data in output logs

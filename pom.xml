@@ -3,22 +3,23 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>net.manbucy.log</groupId>
-    <artifactId>log-masking-parent</artifactId>
+    <groupId>io.github.manbucy</groupId>
+    <artifactId>log-desensitization-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <modules>
-        <module>log-masking-core</module>
-        <module>log-masking-test</module>
-        <module>log-masking-for-logback</module>
+        <module>log-desensitization-core</module>
+        <module>log-desensitization-test</module>
+        <module>log-desensitization-for-logback</module>
     </modules>
     <packaging>pom</packaging>
 
     <properties>
-        <version.slf4j>2.0.4</version.slf4j>
-        <version.logback>1.4.5</version.logback>
-        <version.junit>5.9.1</version.junit>
-        <version.mockito>4.8.1</version.mockito>
+        <slf4j.version>1.7.32</slf4j.version>
+        <logback.version>1.2.13</logback.version>
+        <junit.version>5.9.1</junit.version>
+        <mockito.version>4.8.1</mockito.version>
+        <lombok.version>1.18.26</lombok.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -27,29 +28,36 @@
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
-                <version>${version.slf4j}</version>
+                <version>${slf4j.version}</version>
             </dependency>
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
-                <version>${version.logback}</version>
+                <version>${logback.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
                 <artifactId>junit-jupiter-api</artifactId>
-                <version>${version.junit}</version>
+                <version>${junit.version}</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
                 <artifactId>junit-jupiter-engine</artifactId>
-                <version>${version.junit}</version>
+                <version>${junit.version}</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-junit-jupiter</artifactId>
-                <version>${version.mockito}</version>
+                <version>${mockito.version}</version>
                 <scope>test</scope>
             </dependency>
         </dependencies>

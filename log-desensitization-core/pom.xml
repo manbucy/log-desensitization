@@ -3,14 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>net.manbucy.log</groupId>
-        <artifactId>log-masking-parent</artifactId>
+        <groupId>io.github.manbucy</groupId>
+        <artifactId>log-desensitization-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>./pom.xml</relativePath>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>log-masking-core</artifactId>
+    <artifactId>log-desensitization-core</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -32,6 +32,10 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
 
